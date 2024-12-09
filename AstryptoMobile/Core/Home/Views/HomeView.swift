@@ -26,7 +26,6 @@ struct HomeView: View {
                     .transition(.move(edge: .trailing))
                 }
                 
-                Spacer(minLength: 0)
             }
             .background(.white)
         }
@@ -42,7 +41,7 @@ extension HomeView {
                     CircleButtonAnimationView(isAnimating: $isShowingPortfolio)
                 )
             Spacer()
-            Text(isShowingPortfolio ? "Portfolio" : "About")
+            Text(isShowingPortfolio ? "Portfolio" : "Live Prices")
                 .font(.headline)
                 .fontWeight(.heavy)
                 .animation(.none, value: isShowingPortfolio)
@@ -102,6 +101,8 @@ struct HomeView_Previews: PreviewProvider {
             HomeView()
         }.environmentObject(dev.homeVM)
     }
+    
+    
 }
 
 
