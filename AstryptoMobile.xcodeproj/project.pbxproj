@@ -6,6 +6,29 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		D13352472D144D200081D973 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D131EAE32CD9B2D500C7E575 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D133522F2D144BB00081D973;
+			remoteInfo = MyFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D13352492D144D200081D973 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		D131EAEB2CD9B2D500C7E575 /* AstryptoMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AstryptoMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -14,6 +37,11 @@
 		D131EAED2CD9B2D500C7E575 /* AstryptoMobile */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = AstryptoMobile;
+			sourceTree = "<group>";
+		};
+		D13352312D144BB00081D973 /* MyFramework */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MyFramework;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,8 +60,10 @@
 		D131EAE22CD9B2D500C7E575 = {
 			isa = PBXGroup;
 			children = (
+				D13352312D144BB00081D973 /* MyFramework */,
 				D131EAEC2CD9B2D500C7E575 /* Products */,
 				D131EAED2CD9B2D500C7E575 /* AstryptoMobile */,
+				D133523D2D144C050081D973 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -43,6 +73,13 @@
 				D131EAEB2CD9B2D500C7E575 /* AstryptoMobile.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D133523D2D144C050081D973 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -55,10 +92,12 @@
 				D131EAE72CD9B2D500C7E575 /* Sources */,
 				D131EAE82CD9B2D500C7E575 /* Frameworks */,
 				D131EAE92CD9B2D500C7E575 /* Resources */,
+				D13352492D144D200081D973 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D13352482D144D200081D973 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				D131EAED2CD9B2D500C7E575 /* AstryptoMobile */,
@@ -123,6 +162,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D13352482D144D200081D973 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			targetProxy = D13352472D144D200081D973 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D131EAF72CD9B2D600C7E575 /* Debug */ = {

@@ -17,6 +17,10 @@ struct HomeView: View {
                 .ignoresSafeArea()
             VStack {
                 homeHeader
+                HomeStatsView(showPortfolio: $isShowingPortfolio)
+                SearchBarView(searchText: $vm.searchText)
+                    .padding(.horizontal)
+                    .padding(.vertical, 10)
                 columnTitles
                 if !isShowingPortfolio {
                     allCoinList
@@ -91,7 +95,7 @@ extension HomeView {
         }
         .font(.caption)
         .foregroundColor(.theme.secondaryText)
-        .padding(.horizontal, 10)
+        .padding(.horizontal)
     }
 }
 

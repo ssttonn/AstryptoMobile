@@ -34,6 +34,13 @@ class NetworkingManager {
             .eraseToAnyPublisher()
     }
     
+    static func fetchData<T: Decodable>(
+        url: URL,
+        convertTo: T.Type
+    ) -> AnyPublisher<T, Error> {
+        return fetchData(url: url)
+    }
+    
     static func downloadImage(url: URL) -> AnyPublisher<Data, Error> {
         return URLSession.shared.dataTaskPublisher(for: url)
             .subscribe(on: DispatchQueue.global(qos: .userInitiated))
